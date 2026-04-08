@@ -3,51 +3,65 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     line-height: 1.6;
+    padding: 15px;
+    margin: 0;
+}
+
+form {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%; 
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+#form-inscricao {
+    margin-top: 50px;
 }
 
 button {
     background-color: rgb(151, 141, 128);
     border-radius: 10px;
-    border-color: black;
+    border: 1px solid black;
     color: white;
+    padding: 8px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    min-height: 44px;
+    min-width: 44px;
 }
 
-/* h1 {
-    text-align: center;
-    background-color: rgb(255, 249, 242);
-    border-radius: 10px;
-    width: 400px;
-} */
+@media (max-width: 468px) {
+    body {
+        font-size: 18px;
+    }
 
-#form-inscricao {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    margin-top: 100px;
-    padding: 20px;
+    form {
+        max-width: 500px; 
+        padding: 30px;
+    }
 }
 
-#desafio1 {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 30px;
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 20px; 
+    }
+
+    form {
+        max-width: 600px;
+    }
 }
 
-#desafio2 {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    margin-top:10px;
-    padding: 30px;
-    width: 300px;
-}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 28px;
+    }
 
-#desafio3 {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    margin-top:10px;
-    padding: 30px;
-    width: 300px;
+    form {
+        max-width: 700px;
+    }
 }
